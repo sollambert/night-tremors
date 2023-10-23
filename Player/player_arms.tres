@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://chgfsdhuxipkt"]
+
+[ext_resource type="Texture2D" uid="uid://fuqpoenr0mtk" path="res://Models/Arms/Player_Arms-b9ca7a968272fa715d1fa4e7f91056e0_PlayerArms.png" id="1_2y7yv"]
+
+[resource]
+resource_name = "HandMaterial"
+vertex_color_use_as_albedo = true
+albedo_color = Color(1, 1, 1, 1)
+albedo_texture = ExtResource("1_2y7yv")
+metallic = 0.4
+roughness = 0.98

@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://omivyqdyry8e"]
+
+[ext_resource type="Texture2D" uid="uid://c44cyxrllx6bq" path="res://Player/t_flashlightpattern.png" id="1_cagd8"]
+
+[node name="Flashlight" type="SpotLight3D"]
+light_energy = 20.0
+light_volumetric_fog_energy = 0.0
+light_projector = ExtResource("1_cagd8")
+light_size = 1.0
+shadow_enabled = true
+distance_fade_enabled = true
+spot_range = 20.0
+spot_attenuation = 1.93188
+spot_angle = 35.0

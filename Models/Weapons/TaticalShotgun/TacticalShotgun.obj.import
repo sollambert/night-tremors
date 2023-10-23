@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://ciitsw188ppv5"
+path="res://.godot/imported/TacticalShotgun.obj-53ad8ce1695c95246bf132e31778306d.mesh"
+
+[deps]
+
+files=["res://.godot/imported/TacticalShotgun.obj-53ad8ce1695c95246bf132e31778306d.mesh"]
+
+source_file="res://Models/Weapons/TaticalShotgun/TacticalShotgun.obj"
+dest_files=["res://.godot/imported/TacticalShotgun.obj-53ad8ce1695c95246bf132e31778306d.mesh", "res://.godot/imported/TacticalShotgun.obj-53ad8ce1695c95246bf132e31778306d.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

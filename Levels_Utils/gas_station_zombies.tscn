@@ -1,0 +1,49 @@
+[gd_scene load_steps=2 format=3 uid="uid://xvwms4de5gtr"]
+
+[ext_resource type="PackedScene" uid="uid://d3djpmlxb04u0" path="res://Actors/zombie.tscn" id="1_t82ph"]
+
+[node name="Enemies" type="Node3D"]
+
+[node name="Zombie" parent="." instance=ExtResource("1_t82ph")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.6846, 0, 46.5076)
+follow_distance = 200.0
+
+[node name="Zombie3" parent="." instance=ExtResource("1_t82ph")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.45345, -3.8147e-06, 30.5878)
+follow_distance = 200.0
+
+[node name="Zombie4" parent="." instance=ExtResource("1_t82ph")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31.6253, 3.8147e-06, 42.2791)
+follow_distance = 200.0
+
+[node name="Zombie5" parent="." instance=ExtResource("1_t82ph")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 61.8179, -48.5381, 3.82986)
+follow_distance = 200.0
+
+[node name="Zombie6" parent="." instance=ExtResource("1_t82ph")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.15306, 0, -26.5011)
+follow_distance = 200.0
+
+[node name="Zombie7" parent="." instance=ExtResource("1_t82ph")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.0915, 0, -33.0246)
+follow_distance = 200.0
+
+[node name="Zombie8" parent="." instance=ExtResource("1_t82ph")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -43.3462, 3.8147e-06, -22.2118)
+follow_distance = 200.0
+
+[node name="Zombie9" parent="." instance=ExtResource("1_t82ph")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -41.9835, 0, 29.1521)
+follow_distance = 200.0
+
+[node name="Zombie10" parent="." instance=ExtResource("1_t82ph")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46.0811, 0, 7.12908)
+follow_distance = 200.0
+
+[node name="Zombie11" parent="." instance=ExtResource("1_t82ph")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5377, -4.63024, -69.9974)
+follow_distance = 200.0
+
+[node name="Zombie12" parent="." instance=ExtResource("1_t82ph")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.81176, 3.8147e-06, -3.89189)
+follow_distance = 200.0

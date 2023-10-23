@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://djnmfyhjh5owy"]
+
+[ext_resource type="ArrayMesh" uid="uid://c0tmkdbrxmm2w" path="res://Models/PSX_Style_Cars_by_GGBot_(August2023)/Car 07/Car7.obj" id="1_h16p5"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_osad1"]
+size = Vector3(2.5, 3, 5.8)
+
+[node name="Car7" type="MeshInstance3D"]
+mesh = ExtResource("1_h16p5")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+shape = SubResource("BoxShape3D_osad1")

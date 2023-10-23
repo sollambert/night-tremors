@@ -1,0 +1,11 @@
+Model Information:
+* title:	Light Post
+* source:	https://sketchfab.com/3d-models/light-post-8fc370f1f0da48ab819b7860dbbc0629
+* author:	Mike_カニンガハム (https://sketchfab.com/Maiku_kaninguhamu)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Light Post" (https://sketchfab.com/3d-models/light-post-8fc370f1f0da48ab819b7860dbbc0629) by Mike_カニンガハム (https://sketchfab.com/Maiku_kaninguhamu) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

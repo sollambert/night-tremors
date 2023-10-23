@@ -1,0 +1,455 @@
+[gd_scene load_steps=39 format=3 uid="uid://yq61fvrxcoxf"]
+
+[ext_resource type="Shader" path="res://Shaders/psx.gdshader" id="1_cfx2a"]
+[ext_resource type="PackedScene" uid="uid://dm1ecp7mc3ukw" path="res://UI/ui.tscn" id="2_86nqh"]
+[ext_resource type="PackedScene" uid="uid://cespeam282ld5" path="res://Player/player.tscn" id="2_kxypn"]
+[ext_resource type="Script" path="res://SceneController.gd" id="2_uktwo"]
+[ext_resource type="Script" path="res://UIController.gd" id="5_r08sx"]
+[ext_resource type="LabelSettings" uid="uid://c2law22wtib71" path="res://UI/label_settings.tres" id="5_sa7jt"]
+[ext_resource type="Script" path="res://UI/brightness_slider.gd" id="6_iwg1f"]
+[ext_resource type="Script" path="res://UI/volume_slider.gd" id="7_hoeap"]
+[ext_resource type="Script" path="res://Sounds/AmbientMusic.gd" id="23_tp4nq"]
+[ext_resource type="Script" path="res://VideoSettings.gd" id="27_imun2"]
+[ext_resource type="Script" path="res://UI/Intro_1.gd" id="27_u0emy"]
+[ext_resource type="PackedScene" uid="uid://b1fcihrnlc8m4" path="res://UI/controls.tscn" id="31_yn2yb"]
+[ext_resource type="AudioStream" uid="uid://wek4vwhevycw" path="res://Sounds/drones/horror_01_drone_glitch_01.ogg" id="50_fkipy"]
+[ext_resource type="AudioStream" uid="uid://bhd4bn01eek8u" path="res://Sounds/drones/horror_01_drone_glitch_02.ogg" id="51_dmt8s"]
+[ext_resource type="AudioStream" uid="uid://qejrckhodjq" path="res://Sounds/drones/horror_01_drone_glitch_03.ogg" id="52_18d1d"]
+[ext_resource type="AudioStream" uid="uid://blo4g51b7fuml" path="res://Sounds/drones/horror_01_drone_glitch_11.ogg" id="52_akuoq"]
+[ext_resource type="AudioStream" uid="uid://lix3dv2x2r47" path="res://Sounds/drones/horror_01_drone_glitch_12.ogg" id="53_2jcek"]
+[ext_resource type="AudioStream" uid="uid://bb1r6jw2kdt5t" path="res://Sounds/drones/horror_01_drone_glitch_04.ogg" id="53_lxorl"]
+[ext_resource type="AudioStream" uid="uid://b662fi1rh50wb" path="res://Sounds/drones/horror_01_drone_glitch_13.ogg" id="54_hs4ii"]
+[ext_resource type="AudioStream" uid="uid://btol8r4aruhcx" path="res://Sounds/drones/horror_01_drone_glitch_14.ogg" id="55_7xxdk"]
+[ext_resource type="AudioStream" uid="uid://civ5gq81t2nxr" path="res://Sounds/drones/horror_01_drone_glitch_15.ogg" id="56_h2thi"]
+[ext_resource type="AudioStream" uid="uid://cy2ayu58wgtx8" path="res://Sounds/drones/horror_01_drone_glitch_16.ogg" id="57_s1aw0"]
+[ext_resource type="AudioStream" uid="uid://bo6ah38ssy2oo" path="res://Sounds/drones/horror_01_drone_glitch_17.ogg" id="58_ixweo"]
+[ext_resource type="AudioStream" uid="uid://dgafdy3uw1ekh" path="res://Sounds/drones/horror_01_drone_glitch_18.ogg" id="59_qg2sx"]
+[ext_resource type="AudioStream" uid="uid://clc8gdrec8ixs" path="res://Sounds/drones/horror_01_drone_glitch_19.ogg" id="60_a18m0"]
+[ext_resource type="AudioStream" uid="uid://bigk8a3lvuxn4" path="res://Sounds/drones/horror_01_drone_glitch_20.ogg" id="61_rfcgs"]
+[ext_resource type="AudioStream" uid="uid://bw5cs0rcxeqi7" path="res://Sounds/drones/horror_01_drone_glitch_05.ogg" id="64_do6wq"]
+[ext_resource type="AudioStream" uid="uid://yhay14mc2x5h" path="res://Sounds/drones/horror_01_drone_glitch_06.ogg" id="65_65p5j"]
+[ext_resource type="AudioStream" uid="uid://cn6phge5ghn5r" path="res://Sounds/drones/horror_01_drone_glitch_07.ogg" id="66_rynht"]
+[ext_resource type="AudioStream" uid="uid://ckeior73l4dwp" path="res://Sounds/drones/horror_01_drone_glitch_08.ogg" id="67_h64nj"]
+[ext_resource type="AudioStream" uid="uid://dqgmebsdybi4j" path="res://Sounds/drones/horror_01_drone_glitch_09.ogg" id="68_d1q1o"]
+[ext_resource type="AudioStream" uid="uid://0o27ri10h7yo" path="res://Sounds/drones/horror_01_drone_glitch_10.ogg" id="69_t3nv5"]
+[ext_resource type="Script" path="res://InputController.gd" id="72_b7lty"]
+
+[sub_resource type="Sky" id="Sky_wy7kp"]
+
+[sub_resource type="Environment" id="Environment_td3uv"]
+background_mode = 1
+background_color = Color(0.33, 0, 0.33, 1)
+sky = SubResource("Sky_wy7kp")
+ambient_light_source = 2
+ambient_light_color = Color(0.1386, 0.093, 0.15, 1)
+volumetric_fog_enabled = true
+volumetric_fog_density = 0.075
+volumetric_fog_length = 20.0
+adjustment_enabled = true
+
+[sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_g44hm"]
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_j07ro"]
+streams_count = 20
+stream_0/stream = ExtResource("50_fkipy")
+stream_0/weight = 1.0
+stream_1/stream = ExtResource("51_dmt8s")
+stream_1/weight = 1.0
+stream_2/stream = ExtResource("52_18d1d")
+stream_2/weight = 1.0
+stream_3/stream = ExtResource("53_lxorl")
+stream_3/weight = 1.0
+stream_4/stream = ExtResource("64_do6wq")
+stream_4/weight = 1.0
+stream_5/stream = ExtResource("65_65p5j")
+stream_5/weight = 1.0
+stream_6/stream = ExtResource("66_rynht")
+stream_6/weight = 1.0
+stream_7/stream = ExtResource("67_h64nj")
+stream_7/weight = 1.0
+stream_8/stream = ExtResource("68_d1q1o")
+stream_8/weight = 1.0
+stream_9/stream = ExtResource("69_t3nv5")
+stream_9/weight = 1.0
+stream_10/stream = ExtResource("52_akuoq")
+stream_10/weight = 1.0
+stream_11/stream = ExtResource("53_2jcek")
+stream_11/weight = 1.0
+stream_12/stream = ExtResource("54_hs4ii")
+stream_12/weight = 1.0
+stream_13/stream = ExtResource("55_7xxdk")
+stream_13/weight = 1.0
+stream_14/stream = ExtResource("56_h2thi")
+stream_14/weight = 1.0
+stream_15/stream = ExtResource("57_s1aw0")
+stream_15/weight = 1.0
+stream_16/stream = ExtResource("58_ixweo")
+stream_16/weight = 1.0
+stream_17/stream = ExtResource("59_qg2sx")
+stream_17/weight = 1.0
+stream_18/stream = ExtResource("60_a18m0")
+stream_18/weight = 1.0
+stream_19/stream = ExtResource("61_rfcgs")
+stream_19/weight = 1.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_8ois2"]
+shader = ExtResource("1_cfx2a")
+shader_parameter/enabled = true
+shader_parameter/dithering = true
+shader_parameter/colors = 12
+shader_parameter/dither_size = 2
+
+[node name="Main" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_td3uv")
+camera_attributes = SubResource("CameraAttributesPractical_g44hm")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+
+[node name="AmbientMusic" type="AudioStreamPlayer" parent="."]
+stream = SubResource("AudioStreamRandomizer_j07ro")
+volume_db = -10.0
+autoplay = true
+script = ExtResource("23_tp4nq")
+
+[node name="InputController" type="CanvasLayer" parent="."]
+script = ExtResource("72_b7lty")
+
+[node name="ViewContainer" type="SubViewportContainer" parent="."]
+material = SubResource("ShaderMaterial_8ois2")
+custom_minimum_size = Vector2(1280, 720)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+stretch = true
+
+[node name="UIController" type="CanvasLayer" parent="ViewContainer"]
+script = ExtResource("5_r08sx")
+
+[node name="HUD" type="CanvasLayer" parent="ViewContainer/UIController"]
+visible = false
+
+[node name="ui" parent="ViewContainer/UIController/HUD" instance=ExtResource("2_86nqh")]
+
+[node name="GameWon" type="ColorRect" parent="ViewContainer/UIController"]
+visible = false
+anchors_preset = -1
+anchor_right = 1.002
+anchor_bottom = 1.007
+offset_right = -2.55994
+offset_bottom = -5.03998
+size_flags_horizontal = 3
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Label" type="Label" parent="ViewContainer/UIController/GameWon"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.42
+anchor_top = 0.222
+anchor_right = 0.552
+anchor_bottom = 0.399
+offset_left = -98.8599
+offset_top = 99.05
+offset_right = 131.784
+offset_bottom = 170.725
+text = "Congratulations,
+
+You've escaped for the time being
+
+enjoy it"
+label_settings = ExtResource("5_sa7jt")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Intro_1" type="Control" parent="ViewContainer/UIController"]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("27_u0emy")
+
+[node name="ColorRect" type="ColorRect" parent="ViewContainer/UIController/Intro_1"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Label" type="Label" parent="ViewContainer/UIController/Intro_1/ColorRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "you find yourself in a deeply familiar nightmare
+
+the beasts you face here won't stay dead for long
+
+find your car and escape the torment"
+label_settings = ExtResource("5_sa7jt")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="IntroButton" type="Button" parent="ViewContainer/UIController/Intro_1/ColorRect"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -38.0
+offset_top = 110.0
+offset_right = 38.0
+offset_bottom = 150.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="ViewContainer/UIController/Intro_1/ColorRect/IntroButton"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -28.0
+offset_top = -17.5
+offset_right = 28.0
+offset_bottom = 17.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "start"
+label_settings = ExtResource("5_sa7jt")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Controls" parent="ViewContainer/UIController/Intro_1/ColorRect" instance=ExtResource("31_yn2yb")]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.2
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -181.0
+offset_top = 185.0
+offset_right = -282.0
+offset_bottom = -185.0
+grow_vertical = 1
+
+[node name="Intro_2" type="Control" parent="ViewContainer/UIController"]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("27_u0emy")
+
+[node name="ColorRect" type="ColorRect" parent="ViewContainer/UIController/Intro_2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Label" type="Label" parent="ViewContainer/UIController/Intro_2/ColorRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Your car ran out of gas right as you pulled into
+this abandoned gas station, but the pumps are off
+
+find the fuse box, and turn the power on then get
+back to your car
+
+be warned, they are coming"
+label_settings = ExtResource("5_sa7jt")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="IntroButton" type="Button" parent="ViewContainer/UIController/Intro_2/ColorRect"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -38.0
+offset_top = 140.0
+offset_right = 38.0
+offset_bottom = 180.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="ViewContainer/UIController/Intro_2/ColorRect/IntroButton"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -28.0
+offset_top = -17.5
+offset_right = 28.0
+offset_bottom = 17.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "start"
+label_settings = ExtResource("5_sa7jt")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VideoSettings" type="Control" parent="ViewContainer/UIController"]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("27_imun2")
+
+[node name="Brightness" type="Control" parent="ViewContainer/UIController/VideoSettings"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -100.0
+offset_right = -100.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="ViewContainer/UIController/VideoSettings/Brightness"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 31.975
+anchor_bottom = 17.95
+offset_right = 83.0
+offset_bottom = 26.0
+text = "Brightness"
+label_settings = ExtResource("5_sa7jt")
+
+[node name="Slider" type="HSlider" parent="ViewContainer/UIController/VideoSettings/Brightness"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 31.975
+anchor_bottom = 17.925
+offset_top = 30.0
+offset_right = 200.0
+offset_bottom = 46.0
+focus_mode = 1
+min_value = 0.01
+max_value = 4.0
+step = 0.01
+value = 1.0
+script = ExtResource("6_iwg1f")
+
+[node name="Volume" type="Control" parent="ViewContainer/UIController/VideoSettings"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -100.0
+offset_top = -60.0
+offset_right = -100.0
+offset_bottom = -60.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="ViewContainer/UIController/VideoSettings/Volume"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 32.025
+anchor_bottom = 18.0
+offset_right = 59.0
+offset_bottom = 26.0
+text = "Volume"
+label_settings = ExtResource("5_sa7jt")
+
+[node name="Slider" type="HSlider" parent="ViewContainer/UIController/VideoSettings/Volume"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 31.975
+anchor_bottom = 17.95
+offset_top = 30.0
+offset_right = 200.0
+offset_bottom = 46.0
+focus_mode = 1
+min_value = -20.0
+max_value = 20.0
+script = ExtResource("7_hoeap")
+
+[node name="Label" type="Label" parent="ViewContainer/UIController/VideoSettings"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.2
+anchor_right = 0.5
+anchor_bottom = 0.2
+offset_left = -116.0
+offset_top = 100.0
+offset_right = 116.0
+offset_bottom = 135.0
+grow_horizontal = 2
+text = "Hit 'Escape' to resume"
+label_settings = ExtResource("5_sa7jt")
+
+[node name="Controls" parent="ViewContainer/UIController/VideoSettings" instance=ExtResource("31_yn2yb")]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.2
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -181.0
+offset_top = 185.0
+offset_right = -282.0
+offset_bottom = -185.0
+grow_vertical = 1
+
+[node name="SubViewport" type="SubViewport" parent="ViewContainer"]
+handle_input_locally = false
+audio_listener_enable_2d = true
+audio_listener_enable_3d = true
+size = Vector2i(1280, 720)
+size_2d_override = Vector2i(1280, 720)
+size_2d_override_stretch = true
+render_target_update_mode = 4
+
+[node name="Player" parent="ViewContainer/SubViewport" instance=ExtResource("2_kxypn")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 14.0814, 0, 0.204977)
+speed = 10.0
+sprint_speed = 3.5
+
+[node name="SceneController" type="Node3D" parent="."]
+script = ExtResource("2_uktwo")
+
+[connection signal="pressed" from="ViewContainer/UIController/Intro_1/ColorRect/IntroButton" to="ViewContainer/UIController" method="_on_intro_button_pressed"]
+[connection signal="pressed" from="ViewContainer/UIController/Intro_2/ColorRect/IntroButton" to="ViewContainer/UIController" method="_on_intro_button_pressed"]

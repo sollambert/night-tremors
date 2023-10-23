@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cv2r6f7ctrxqr"
+path="res://.godot/imported/12g_Green_240.obj-6ccb2e12b5042b08416aa784ed44ecb1.mesh"
+
+[deps]
+
+files=["res://.godot/imported/12g_Green_240.obj-6ccb2e12b5042b08416aa784ed44ecb1.mesh"]
+
+source_file="res://Models/Weapons/12g/12g_Green_240.obj"
+dest_files=["res://.godot/imported/12g_Green_240.obj-6ccb2e12b5042b08416aa784ed44ecb1.mesh", "res://.godot/imported/12g_Green_240.obj-6ccb2e12b5042b08416aa784ed44ecb1.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

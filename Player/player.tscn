@@ -1,0 +1,39 @@
+[gd_scene load_steps=3 format=3 uid="uid://cespeam282ld5"]
+
+[ext_resource type="Script" path="res://Player/player.gd" id="1_th0x7"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_48jwt"]
+radius = 0.4
+
+[node name="Player" type="CharacterBody3D"]
+script = ExtResource("1_th0x7")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("CapsuleShape3D_48jwt")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+
+[node name="arms_mount" type="Node3D" parent="Camera3D"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.041, -0.285, -0.1)
+
+[node name="SprintRechargeDelayTimer" type="Timer" parent="."]
+
+[node name="SprintRechargeTimer" type="Timer" parent="."]
+
+[node name="DamageOverlayTimer" type="Timer" parent="."]
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+light_energy = 0.1
+light_indirect_energy = 0.1
+light_volumetric_fog_energy = 0.0
+omni_range = 0.7
+
+[node name="FireRateTimer" type="Timer" parent="."]
+
+[node name="ReloadTimer" type="Timer" parent="."]
+
+[connection signal="timeout" from="SprintRechargeDelayTimer" to="." method="_on_sprint_recharge_delay_timer_timeout"]
+[connection signal="timeout" from="SprintRechargeTimer" to="." method="_on_sprint_recharge_timer_timeout"]

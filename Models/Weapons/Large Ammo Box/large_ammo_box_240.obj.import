@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://brqknw18ibk15"
+path="res://.godot/imported/large_ammo_box_240.obj-0170754bd472309a38ef798276268961.mesh"
+
+[deps]
+
+files=["res://.godot/imported/large_ammo_box_240.obj-0170754bd472309a38ef798276268961.mesh"]
+
+source_file="res://Models/Weapons/Large Ammo Box/large_ammo_box_240.obj"
+dest_files=["res://.godot/imported/large_ammo_box_240.obj-0170754bd472309a38ef798276268961.mesh", "res://.godot/imported/large_ammo_box_240.obj-0170754bd472309a38ef798276268961.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

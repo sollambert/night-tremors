@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://nxlv0im0334o"]
+
+[ext_resource type="Script" path="res://Pickups/Pickup.gd" id="1_ee0vj"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_nmp4y"]
+
+[node name="Pickup" type="Area3D"]
+script = ExtResource("1_ee0vj")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("SphereShape3D_nmp4y")
+
+[node name="RespawnTimer" type="Timer" parent="."]
+
+[node name="pickup_mount" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="timeout" from="RespawnTimer" to="." method="_on_respawn_timer_timeout"]

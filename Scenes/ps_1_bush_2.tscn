@@ -1,0 +1,165 @@
+[gd_scene load_steps=11 format=3 uid="uid://eoyck8r4lnxx"]
+
+[ext_resource type="Texture2D" uid="uid://b0haxlbnj7q76" path="res://Models/psx_forest_asset_pack/textures/Ps1Bush2Texture_baseColor.png" id="1_orug7"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y42m2"]
+resource_name = "Ps1Bush2Texture"
+transparency = 2
+alpha_scissor_threshold = 0.5
+alpha_antialiasing_mode = 0
+cull_mode = 2
+vertex_color_use_as_albedo = true
+albedo_texture = ExtResource("1_orug7")
+roughness = 0.0
+texture_filter = 2
+texture_repeat = false
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_01usy"]
+_surfaces = [{
+"aabb": AABB(-0.47811, 0, -0.29149, 0.95622, 1e-05, 0.58299),
+"format": 4097,
+"index_count": 6,
+"index_data": PackedByteArray(0, 0, 3, 0, 1, 0, 0, 0, 2, 0, 3, 0),
+"name": "Ps1Bush2Texture",
+"primitive": 3,
+"vertex_count": 4,
+"vertex_data": PackedByteArray(219, 202, 244, 190, 0, 0, 0, 0, 50, 62, 149, 62, 219, 202, 244, 62, 0, 0, 0, 0, 50, 62, 149, 62, 219, 202, 244, 190, 0, 0, 0, 0, 50, 62, 149, 190, 219, 202, 244, 62, 0, 0, 0, 0, 50, 62, 149, 190)
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_lrx4i"]
+resource_name = "Sketchfab_Scene_Object_9"
+_surfaces = [{
+"aabb": AABB(-0.47811, 0, -0.29149, 0.95622, 1e-05, 0.58299),
+"attribute_data": PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 63, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 63, 0, 0, 128, 63, 0, 0, 128, 63),
+"format": 4119,
+"index_count": 6,
+"index_data": PackedByteArray(0, 0, 3, 0, 1, 0, 0, 0, 2, 0, 3, 0),
+"material": SubResource("StandardMaterial3D_y42m2"),
+"name": "Ps1Bush2Texture",
+"primitive": 3,
+"vertex_count": 4,
+"vertex_data": PackedByteArray(219, 202, 244, 190, 0, 0, 0, 0, 50, 62, 149, 62, 255, 127, 255, 255, 255, 255, 255, 63, 219, 202, 244, 62, 0, 0, 0, 0, 50, 62, 149, 62, 255, 127, 255, 255, 255, 255, 255, 63, 219, 202, 244, 190, 0, 0, 0, 0, 50, 62, 149, 190, 255, 127, 255, 255, 255, 255, 255, 63, 219, 202, 244, 62, 0, 0, 0, 0, 50, 62, 149, 190, 255, 127, 255, 255, 255, 255, 255, 63)
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_01usy")
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_kuqss"]
+_surfaces = [{
+"aabb": AABB(-0.450782, 0, -0.29149, 0.901564, 1e-05, 0.58299),
+"format": 4097,
+"index_count": 6,
+"index_data": PackedByteArray(0, 0, 3, 0, 1, 0, 0, 0, 2, 0, 3, 0),
+"name": "Ps1Bush2Texture",
+"primitive": 3,
+"vertex_count": 4,
+"vertex_data": PackedByteArray(228, 204, 230, 190, 0, 0, 0, 0, 50, 62, 149, 62, 228, 204, 230, 62, 0, 0, 0, 0, 50, 62, 149, 62, 228, 204, 230, 190, 0, 0, 0, 0, 50, 62, 149, 190, 228, 204, 230, 62, 0, 0, 0, 0, 50, 62, 149, 190)
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_rf2x7"]
+resource_name = "Sketchfab_Scene_Object_10"
+_surfaces = [{
+"aabb": AABB(-0.450782, 0, -0.29149, 0.901564, 1e-05, 0.58299),
+"attribute_data": PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 63, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 63, 0, 0, 128, 63, 0, 0, 128, 63),
+"format": 4119,
+"index_count": 6,
+"index_data": PackedByteArray(0, 0, 3, 0, 1, 0, 0, 0, 2, 0, 3, 0),
+"material": SubResource("StandardMaterial3D_y42m2"),
+"name": "Ps1Bush2Texture",
+"primitive": 3,
+"vertex_count": 4,
+"vertex_data": PackedByteArray(228, 204, 230, 190, 0, 0, 0, 0, 50, 62, 149, 62, 255, 127, 255, 255, 255, 255, 255, 63, 228, 204, 230, 62, 0, 0, 0, 0, 50, 62, 149, 62, 255, 127, 255, 255, 255, 255, 255, 63, 228, 204, 230, 190, 0, 0, 0, 0, 50, 62, 149, 190, 255, 127, 255, 255, 255, 255, 255, 63, 228, 204, 230, 62, 0, 0, 0, 0, 50, 62, 149, 190, 255, 127, 255, 255, 255, 255, 255, 63)
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_kuqss")
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_51rgu"]
+_surfaces = [{
+"aabb": AABB(-0.465672, 0, -0.29149, 0.931344, 1e-05, 0.58299),
+"format": 4097,
+"index_count": 6,
+"index_data": PackedByteArray(0, 0, 3, 0, 1, 0, 0, 0, 2, 0, 3, 0),
+"name": "Ps1Bush2Texture",
+"primitive": 3,
+"vertex_count": 4,
+"vertex_data": PackedByteArray(151, 108, 238, 190, 0, 0, 0, 0, 50, 62, 149, 62, 151, 108, 238, 62, 0, 0, 0, 0, 50, 62, 149, 62, 151, 108, 238, 190, 0, 0, 0, 0, 50, 62, 149, 190, 151, 108, 238, 62, 0, 0, 0, 0, 50, 62, 149, 190)
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_pbpci"]
+resource_name = "Sketchfab_Scene_Object_11"
+_surfaces = [{
+"aabb": AABB(-0.465672, 0, -0.29149, 0.931344, 1e-05, 0.58299),
+"attribute_data": PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 63, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 63, 0, 0, 128, 63, 0, 0, 128, 63),
+"format": 4119,
+"index_count": 6,
+"index_data": PackedByteArray(0, 0, 3, 0, 1, 0, 0, 0, 2, 0, 3, 0),
+"material": SubResource("StandardMaterial3D_y42m2"),
+"name": "Ps1Bush2Texture",
+"primitive": 3,
+"vertex_count": 4,
+"vertex_data": PackedByteArray(151, 108, 238, 190, 0, 0, 0, 0, 50, 62, 149, 62, 255, 127, 255, 255, 255, 255, 255, 63, 151, 108, 238, 62, 0, 0, 0, 0, 50, 62, 149, 62, 255, 127, 255, 255, 255, 255, 255, 63, 151, 108, 238, 190, 0, 0, 0, 0, 50, 62, 149, 190, 255, 127, 255, 255, 255, 255, 255, 63, 151, 108, 238, 62, 0, 0, 0, 0, 50, 62, 149, 190, 255, 127, 255, 255, 255, 255, 255, 63)
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_51rgu")
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_kgak0"]
+_surfaces = [{
+"aabb": AABB(-0.465672, 0, -0.29149, 0.931345, 1e-05, 0.58299),
+"format": 4097,
+"index_count": 6,
+"index_data": PackedByteArray(0, 0, 3, 0, 1, 0, 0, 0, 2, 0, 3, 0),
+"name": "Ps1Bush2Texture",
+"primitive": 3,
+"vertex_count": 4,
+"vertex_data": PackedByteArray(152, 108, 238, 190, 0, 0, 0, 0, 50, 62, 149, 62, 152, 108, 238, 62, 0, 0, 0, 0, 50, 62, 149, 62, 152, 108, 238, 190, 0, 0, 0, 0, 50, 62, 149, 190, 152, 108, 238, 62, 0, 0, 0, 0, 50, 62, 149, 190)
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_ld5wu"]
+resource_name = "Sketchfab_Scene_Object_12"
+_surfaces = [{
+"aabb": AABB(-0.465672, 0, -0.29149, 0.931345, 1e-05, 0.58299),
+"attribute_data": PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 63, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 128, 63, 0, 0, 128, 63, 0, 0, 128, 63),
+"format": 4119,
+"index_count": 6,
+"index_data": PackedByteArray(0, 0, 3, 0, 1, 0, 0, 0, 2, 0, 3, 0),
+"material": SubResource("StandardMaterial3D_y42m2"),
+"name": "Ps1Bush2Texture",
+"primitive": 3,
+"vertex_count": 4,
+"vertex_data": PackedByteArray(152, 108, 238, 190, 0, 0, 0, 0, 50, 62, 149, 62, 255, 127, 255, 255, 255, 255, 255, 63, 152, 108, 238, 62, 0, 0, 0, 0, 50, 62, 149, 62, 255, 127, 255, 255, 255, 255, 255, 63, 152, 108, 238, 190, 0, 0, 0, 0, 50, 62, 149, 190, 255, 127, 255, 255, 255, 255, 255, 63, 152, 108, 238, 62, 0, 0, 0, 0, 50, 62, 149, 190, 255, 127, 255, 255, 255, 255, 255, 63)
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_kgak0")
+
+[node name="Ps1_Bush2" type="Node3D"]
+
+[node name="Ps1Bush2Texture_9" type="Node3D" parent="."]
+transform = Transform3D(-2.98023e-08, 1, -2.98023e-08, 2.98023e-08, -2.98023e-08, -1, -1, -2.98023e-08, -2.98023e-08, -1, 0, 4)
+
+[node name="Object_22" type="MeshInstance3D" parent="Ps1Bush2Texture_9"]
+mesh = SubResource("ArrayMesh_lrx4i")
+skeleton = NodePath("")
+
+[node name="Ps1Bush2Texture_001_10" type="Node3D" parent="."]
+transform = Transform3D(-1, -1.62921e-07, -1.62921e-07, 1.62921e-07, 1.33227e-14, -1, 1.62921e-07, -1, 1.33227e-14, -1, 0, 4)
+
+[node name="Object_24" type="MeshInstance3D" parent="Ps1Bush2Texture_001_10"]
+mesh = SubResource("ArrayMesh_rf2x7")
+skeleton = NodePath("")
+
+[node name="Ps1Bush2Texture_002_11" type="Node3D" parent="."]
+transform = Transform3D(-0.707106, -0.707107, 7.11964e-08, -6.68079e-09, -9.40061e-08, -1, 0.707107, -0.707106, 6.17483e-08, -1, 0, 4)
+
+[node name="Object_26" type="MeshInstance3D" parent="Ps1Bush2Texture_002_11"]
+mesh = SubResource("ArrayMesh_pbpci")
+skeleton = NodePath("")
+
+[node name="Ps1Bush2Texture_003_12" type="Node3D" parent="."]
+transform = Transform3D(0.707107, -0.707106, 3.22578e-08, -3.22578e-08, -7.78772e-08, -1, 0.707106, 0.707107, -7.78772e-08, -1, 0, 4)
+
+[node name="Object_28" type="MeshInstance3D" parent="Ps1Bush2Texture_003_12"]
+mesh = SubResource("ArrayMesh_ld5wu")
+skeleton = NodePath("")

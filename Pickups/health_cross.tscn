@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://ie5062em6005"]
+
+[ext_resource type="Material" uid="uid://lqhgbst4cilb" path="res://Pickups/health_mat.tres" id="1_0kkib"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_ryr45"]
+material = ExtResource("1_0kkib")
+size = Vector3(0.2, 0.2, 0.5)
+
+[node name="health_cross" type="CSGMesh3D"]
+mesh = SubResource("BoxMesh_ryr45")
+
+[node name="CSGMesh3D" type="CSGMesh3D" parent="."]
+transform = Transform3D(-4.37114e-08, 1, -4.37114e-08, 0, -4.37114e-08, -1, -1, -4.37114e-08, 1.91069e-15, -0.00168502, -1.19209e-07, 0.0037663)
+mesh = SubResource("BoxMesh_ryr45")
+material = ExtResource("1_0kkib")

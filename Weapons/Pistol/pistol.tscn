@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=3 uid="uid://bpol7owh7u18p"]
+
+[ext_resource type="Script" path="res://Weapons/Weapon.gd" id="1_52kqm"]
+[ext_resource type="PackedScene" uid="uid://bwb8qnvx5pmkj" path="res://Weapons/Pistol/arms.tscn" id="1_e1p18"]
+[ext_resource type="Script" path="res://Player/Muzzle.gd" id="2_hmphp"]
+
+[node name="pistol" type="Node3D"]
+script = ExtResource("1_52kqm")
+
+[node name="arms" parent="." instance=ExtResource("1_e1p18")]
+
+[node name="muzzle" type="Node3D" parent="."]
+transform = Transform3D(-1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, 0.0747447, 0.136051, -0.856745)
+script = ExtResource("2_hmphp")
+
+[node name="Flash" type="OmniLight3D" parent="muzzle"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.089873, 4.76837e-07, 3.5999)
+visible = false
+light_color = Color(1, 0.760784, 0.490196, 1)
+light_energy = 15.0
+light_volumetric_fog_energy = 0.0
+omni_range = 50.0
+omni_attenuation = 2.0
+
+[node name="FlashTimer" type="Timer" parent="muzzle"]
+
+[node name="flashlight_mount" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0767327, -0.0146822, -0.695047)
+
+[connection signal="timeout" from="muzzle/FlashTimer" to="muzzle" method="_on_flash_timer_timeout"]

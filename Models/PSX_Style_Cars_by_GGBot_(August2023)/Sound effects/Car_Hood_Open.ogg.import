@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bwuvgks6vlb17"
+path="res://.godot/imported/Car_Hood_Open.ogg-560b012356407a7a1e36a8f592d50ebe.oggvorbisstr"
+
+[deps]
+
+source_file="res://Models/PSX_Style_Cars_by_GGBot_(August2023)/Sound effects/Car_Hood_Open.ogg"
+dest_files=["res://.godot/imported/Car_Hood_Open.ogg-560b012356407a7a1e36a8f592d50ebe.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

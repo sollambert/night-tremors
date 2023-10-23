@@ -1,0 +1,11 @@
+Model Information:
+* title:	psx style chain fence gate
+* source:	https://sketchfab.com/3d-models/psx-style-chain-fence-gate-02fb75f229fa47b5a5d59f7409e2f4c1
+* author:	mrpeanut (https://sketchfab.com/mrpeanut)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "psx style chain fence gate" (https://sketchfab.com/3d-models/psx-style-chain-fence-gate-02fb75f229fa47b5a5d59f7409e2f4c1) by mrpeanut (https://sketchfab.com/mrpeanut) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

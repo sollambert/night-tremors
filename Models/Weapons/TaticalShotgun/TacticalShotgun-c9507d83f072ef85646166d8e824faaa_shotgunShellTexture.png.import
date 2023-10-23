@@ -1,0 +1,36 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://busr5rtklp7n1"
+path.s3tc="res://.godot/imported/TacticalShotgun-c9507d83f072ef85646166d8e824faaa_shotgunShellTexture.png-3c0eeb3e688addfd07eb0a0e636ba1c5.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+generator_parameters={}
+
+[deps]
+
+source_file="res://Models/Weapons/TaticalShotgun/TacticalShotgun-c9507d83f072ef85646166d8e824faaa_shotgunShellTexture.png"
+dest_files=["res://.godot/imported/TacticalShotgun-c9507d83f072ef85646166d8e824faaa_shotgunShellTexture.png-3c0eeb3e688addfd07eb0a0e636ba1c5.s3tc.ctex"]
+
+[params]
+
+compress/mode=2
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/normal_map=0
+compress/channel_pack=0
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=0

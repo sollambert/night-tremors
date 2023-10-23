@@ -1,0 +1,45 @@
+[gd_scene load_steps=7 format=3 uid="uid://bbqe1t4mavvab"]
+
+[ext_resource type="Material" uid="uid://q5fd2dsea2gu" path="res://Models/StrobingSpot/light_fixture.tres" id="1_reblt"]
+[ext_resource type="Script" path="res://Models/StrobingSpot/strobing_spot.gd" id="1_wvku1"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_afos5"]
+material = ExtResource("1_reblt")
+top_radius = 0.025
+bottom_radius = 0.1
+height = 0.3
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_v5v3i"]
+material = ExtResource("1_reblt")
+top_radius = 0.025
+bottom_radius = 0.025
+height = 0.15
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_heiwu"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_ntsdw"]
+material = SubResource("StandardMaterial3D_heiwu")
+top_radius = 0.08
+bottom_radius = 0.08
+height = 0.025
+
+[node name="StrobingSpot" type="Node3D"]
+script = ExtResource("1_wvku1")
+
+[node name="LightHood" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.866025, 0.5, 0, -0.5, 0.866025, 0, 0, 0.121578)
+mesh = SubResource("CylinderMesh_afos5")
+
+[node name="LightShaft" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0)
+mesh = SubResource("CylinderMesh_v5v3i")
+
+[node name="LightBulb" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.866025, 0.5, 0, -0.5, 0.866025, 0.00111947, -0.132582, 0.200547)
+mesh = SubResource("CylinderMesh_ntsdw")
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="SpotLight3D" type="SpotLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -0.5, 0.866025, 0, -0.866025, -0.5, 0, -0.0581147, 0.157797)
+light_volumetric_fog_energy = 0.25

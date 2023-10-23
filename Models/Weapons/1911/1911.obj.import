@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bwlrb6rkq17e4"
+path="res://.godot/imported/1911.obj-fb0fed66a77e076c4fe3f4388dd6190b.mesh"
+
+[deps]
+
+files=["res://.godot/imported/1911.obj-fb0fed66a77e076c4fe3f4388dd6190b.mesh"]
+
+source_file="res://Models/Weapons/1911/1911.obj"
+dest_files=["res://.godot/imported/1911.obj-fb0fed66a77e076c4fe3f4388dd6190b.mesh", "res://.godot/imported/1911.obj-fb0fed66a77e076c4fe3f4388dd6190b.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

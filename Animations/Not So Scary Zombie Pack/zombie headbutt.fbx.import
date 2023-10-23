@@ -1,0 +1,32 @@
+[remap]
+
+importer="animation_library"
+importer_version=1
+type="AnimationLibrary"
+uid="uid://d0pd2438hgn01"
+path="res://.godot/imported/zombie headbutt.fbx-652f494cd81d0845f8b49366f117d71a.res"
+
+[deps]
+
+source_file="res://Animations/Not So Scary Zombie Pack/zombie headbutt.fbx"
+dest_files=["res://.godot/imported/zombie headbutt.fbx-652f494cd81d0845f8b49366f117d71a.res"]
+
+[params]
+
+nodes/root_type="Node3D"
+nodes/root_name="Scene Root"
+nodes/apply_root_scale=true
+nodes/root_scale=1.0
+meshes/ensure_tangents=true
+meshes/generate_lods=true
+meshes/create_shadow_meshes=true
+meshes/light_baking=1
+meshes/lightmap_texel_size=0.2
+skins/use_named_skins=true
+animation/import=true
+animation/fps=30
+animation/trimming=false
+animation/remove_immutable_tracks=true
+import_script/path=""
+_subresources={}
+gltf/embedded_image_handling=1

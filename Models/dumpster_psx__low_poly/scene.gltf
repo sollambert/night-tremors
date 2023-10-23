@@ -1,0 +1,380 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 614,
+      "max": [
+        56.76842498779297,
+        33.22819900512695,
+        73.04572296142578
+      ],
+      "min": [
+        -56.768409729003906,
+        -38.07493209838867,
+        0.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 7368,
+      "componentType": 5126,
+      "count": 614,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 614,
+      "max": [
+        0.99169921875,
+        0.99609375
+      ],
+      "min": [
+        0.0033588409423828125,
+        0.0027446746826171875
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 948,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 14736,
+      "componentType": 5126,
+      "count": 6,
+      "max": [
+        51.986629486083984,
+        31.108858108520508,
+        47.796749114990234
+      ],
+      "min": [
+        -51.98662185668945,
+        31.108842849731445,
+        4.713269233703613
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 14808,
+      "componentType": 5126,
+      "count": 6,
+      "max": [
+        0.303693950176239,
+        1.0,
+        0.345174640417099
+      ],
+      "min": [
+        -0.4928990602493286,
+        0.754352331161499,
+        -0.5819987058639526
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 4912,
+      "componentType": 5126,
+      "count": 6,
+      "max": [
+        0.32958984375,
+        0.3935546875
+      ],
+      "min": [
+        0.0701904296875,
+        0.01091766357421875
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 3792,
+      "componentType": 5125,
+      "count": 12,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "liltoba (https://sketchfab.com/liltoba)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/dumpster-psx-low-poly-aa73886e4a754f37bd7128d77c3aff6c",
+      "title": "Dumpster Psx | Low Poly"
+    },
+    "generator": "Sketchfab-12.68.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 3840,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 4960,
+      "byteOffset": 3840,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 14880,
+      "byteOffset": 8800,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 23680,
+      "uri": "scene.bin"
+    }
+  ],
+  "images": [
+    {
+      "uri": "textures/dumpster-Material_002__AO_tga_baseColor.png"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "dumpster-Material_002__AO_tga",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.9577051494623774
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "dumpster-Material_002__Untitled1_tga",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.9577051494623774
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "dumpster_001_dumpster-Material_002__AO_tga_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "dumpster_001_dumpster-Material_002__Untitled1_tga_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 5,
+            "POSITION": 4,
+            "TEXCOORD_0": 6
+          },
+          "indices": 7,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        0.0,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2
+      ],
+      "matrix": [
+        0.009999999776482582,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.009999999776482582,
+        0.0,
+        0.0,
+        -0.009999999776482582,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Dumpster.fbx"
+    },
+    {
+      "children": [
+        3
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        4
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        -12.158937454223633,
+        -2.0222692489624023,
+        -9.9539155960083,
+        1.0
+      ],
+      "name": "World"
+    },
+    {
+      "children": [
+        5
+      ],
+      "name": "Props"
+    },
+    {
+      "children": [
+        6
+      ],
+      "matrix": [
+        6.515876633779754e-18,
+        0.0,
+        0.029344899579882622,
+        0.0,
+        0.0,
+        0.029344899579882622,
+        0.0,
+        0.0,
+        -0.029344899579882622,
+        0.0,
+        6.515876633779754e-18,
+        0.0,
+        -6.519999980926514,
+        2.0222692489624023,
+        -15.7960844039917,
+        1.0
+      ],
+      "name": "Dumpster"
+    },
+    {
+      "children": [
+        7,
+        8
+      ],
+      "matrix": [
+        1.0,
+        -6.842277657836021e-49,
+        1.2325951644078308e-32,
+        0.0,
+        1.23259516440782e-32,
+        -1.331580541386046e-07,
+        -0.9999999999999911,
+        0.0,
+        1.6412997377004574e-39,
+        0.9999999999999911,
+        -1.331580541386046e-07,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "dumpster_001"
+    },
+    {
+      "mesh": 0,
+      "name": "dumpster_001_dumpster-Material_002__AO_tga_0"
+    },
+    {
+      "mesh": 1,
+      "name": "dumpster_001_dumpster-Material_002__Untitled1_tga_0"
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    }
+  ]
+}

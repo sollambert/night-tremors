@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cyhmooeqp6v27"
+path="res://.godot/imported/HighCalibler.obj-eec9dea6c8d4ca0bb8df2510673eb7da.mesh"
+
+[deps]
+
+files=["res://.godot/imported/HighCalibler.obj-eec9dea6c8d4ca0bb8df2510673eb7da.mesh"]
+
+source_file="res://Models/Weapons/HighCalibler/HighCalibler.obj"
+dest_files=["res://.godot/imported/HighCalibler.obj-eec9dea6c8d4ca0bb8df2510673eb7da.mesh", "res://.godot/imported/HighCalibler.obj-eec9dea6c8d4ca0bb8df2510673eb7da.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

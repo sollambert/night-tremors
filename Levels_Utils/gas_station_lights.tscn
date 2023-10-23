@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://drq3670knp5wj"]
+
+[node name="Lights" type="Node3D"]
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.6948, 2.66899, -7.1625)
+light_volumetric_fog_energy = 0.0
+omni_range = 10.0
+
+[node name="OmniLight3D3" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.0753, 2.66899, -12.0454)
+light_volumetric_fog_energy = 0.0
+omni_range = 10.0
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.4975, 2.93226, -4.63127)
+light_volumetric_fog_energy = 0.0
+omni_range = 10.0
+
+[node name="OmniLight3D4" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.7385, 5.92003, 14.5713)
+light_volumetric_fog_energy = 0.25
+omni_range = 20.0
+
+[node name="OmniLight3D5" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25.995, 5.92003, 14.5491)
+light_volumetric_fog_energy = 0.25
+omni_range = 20.0

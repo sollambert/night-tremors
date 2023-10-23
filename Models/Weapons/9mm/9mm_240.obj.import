@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c7qrk0cpvksbx"
+path="res://.godot/imported/9mm_240.obj-c7ec137587fb6e02c91abb7819bdce6e.mesh"
+
+[deps]
+
+files=["res://.godot/imported/9mm_240.obj-c7ec137587fb6e02c91abb7819bdce6e.mesh"]
+
+source_file="res://Models/Weapons/9mm/9mm_240.obj"
+dest_files=["res://.godot/imported/9mm_240.obj-c7ec137587fb6e02c91abb7819bdce6e.mesh", "res://.godot/imported/9mm_240.obj-c7ec137587fb6e02c91abb7819bdce6e.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://bfmuddx13yjxj"]
+
+[ext_resource type="PackedScene" uid="uid://nxlv0im0334o" path="res://Pickups/Pickup.tscn" id="1_p2b0s"]
+[ext_resource type="Script" path="res://Pickups/health_pickup.gd" id="2_0o1bi"]
+
+[node name="Pickup" instance=ExtResource("1_p2b0s")]
+script = ExtResource("2_0o1bi")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+light_color = Color(0.356863, 1, 0.160784, 1)
+light_energy = 0.25
+omni_range = 2.0

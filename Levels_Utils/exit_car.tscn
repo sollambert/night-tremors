@@ -1,0 +1,100 @@
+[gd_scene load_steps=8 format=3 uid="uid://rw3ppdk4qhdq"]
+
+[ext_resource type="ArrayMesh" uid="uid://bouppid7cc5mv" path="res://Models/PSX_Style_Cars_by_GGBot_(August2023)/Car 05/Car5.obj" id="1_1iuqf"]
+[ext_resource type="Script" path="res://Levels_Utils/ExitCar.gd" id="2_csqki"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_sdff3"]
+size = Vector3(2.5, 2, 7.1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6lr5u"]
+shading_mode = 0
+albedo_color = Color(0.88, 0.044, 0.044, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_hwa30"]
+material = SubResource("StandardMaterial3D_6lr5u")
+top_radius = 0.075
+bottom_radius = 0.05
+height = 0.01
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_l4gvp"]
+shading_mode = 0
+
+[sub_resource type="BoxMesh" id="BoxMesh_44qf4"]
+material = SubResource("StandardMaterial3D_l4gvp")
+size = Vector3(0.5, 0.2, 0.02)
+
+[node name="exit_car" type="Area3D"]
+script = ExtResource("2_csqki")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("BoxShape3D_sdff3")
+
+[node name="SpotLight3D" type="SpotLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.656914, 1.05235, -3.53891)
+light_color = Color(1, 0.141176, 0.141176, 1)
+
+[node name="SpotLight3D4" type="SpotLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.63352, 1.05235, -3.55596)
+light_color = Color(1, 0.141176, 0.141176, 1)
+
+[node name="SpotLight3D5" type="SpotLight3D" parent="."]
+transform = Transform3D(1, -4.44089e-16, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, 0.879067, 1.06331, 3.53755)
+light_energy = 5.0
+spot_range = 20.0
+spot_angle = 20.0
+
+[node name="SpotLight3D7" type="SpotLight3D" parent="."]
+transform = Transform3D(1, -4.44089e-16, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, -0.851247, 1.06331, 3.49274)
+light_energy = 5.0
+spot_range = 20.0
+spot_angle = 20.0
+
+[node name="SpotLight3D6" type="SpotLight3D" parent="."]
+transform = Transform3D(1, -4.44089e-16, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, 0.879067, 1.06331, 3.53755)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, -1.11022e-15, 0, -4.37113e-08, -1, 0, 1, -4.37114e-08, -0.404833, 1.00076, -3.49524)
+mesh = SubResource("CylinderMesh_hwa30")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, -1.77636e-15, 0, -4.37113e-08, -0.999999, 0, 1, -4.37113e-08, -0.679898, 1.00076, -3.49554)
+mesh = SubResource("CylinderMesh_hwa30")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, -2.22045e-15, 0, -4.37113e-08, -0.999999, 0, 1, -4.37113e-08, -0.955917, 1.00076, -3.47289)
+mesh = SubResource("CylinderMesh_hwa30")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, -2.22045e-15, 0, -4.37113e-08, -0.999999, 0, 1, -4.37113e-08, 0.399616, 1.00076, -3.49839)
+mesh = SubResource("CylinderMesh_hwa30")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, -2.66454e-15, 0, -4.37113e-08, -0.999999, 0, 1, -4.37113e-08, 0.671604, 1.00076, -3.48603)
+mesh = SubResource("CylinderMesh_hwa30")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D6" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, -2.88658e-15, 0, -4.37113e-08, -0.999999, 0, 1, -4.37113e-08, 0.968471, 1.00076, -3.46941)
+mesh = SubResource("CylinderMesh_hwa30")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D7" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.994237, 0, -0.107201, 0, 0.999999, 0, 0.107201, 0, 0.994237, -0.857129, 1.0027, 3.45858)
+mesh = SubResource("BoxMesh_44qf4")
+skeleton = NodePath("../..")
+
+[node name="MeshInstance3D8" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.995046, 0, 0.0994065, 0, 0.999998, 0, -0.0994065, 0, 0.995046, 0.880784, 1.0027, 3.45759)
+mesh = SubResource("BoxMesh_44qf4")
+skeleton = NodePath("../..")
+
+[node name="Car10" type="MeshInstance3D" parent="."]
+mesh = ExtResource("1_1iuqf")
+skeleton = NodePath("")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

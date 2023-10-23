@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://ds0n5t51n6eqj"]
+
+[ext_resource type="PackedScene" uid="uid://nxlv0im0334o" path="res://Pickups/Pickup.tscn" id="1_a534h"]
+[ext_resource type="Script" path="res://Pickups/ammo_pickup.gd" id="2_kq3tb"]
+
+[node name="Pickup" instance=ExtResource("1_a534h")]
+script = ExtResource("2_kq3tb")
+weapon_id = 0
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+light_color = Color(1, 0.776471, 0.160784, 1)
+light_energy = 0.25
+omni_range = 2.0

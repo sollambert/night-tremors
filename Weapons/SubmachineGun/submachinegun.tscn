@@ -1,0 +1,39 @@
+[gd_scene load_steps=4 format=3 uid="uid://b4174t6xb6wfb"]
+
+[ext_resource type="Script" path="res://Weapons/Weapon.gd" id="1_fviq2"]
+[ext_resource type="PackedScene" uid="uid://bwb8qnvx5pmkj" path="res://Weapons/Pistol/arms.tscn" id="2_41dub"]
+[ext_resource type="Script" path="res://Player/Muzzle.gd" id="3_vk407"]
+
+[node name="submachinegun" type="Node3D"]
+script = ExtResource("1_fviq2")
+max_ammo = 150
+max_ammo_magazine = 30
+ammo = 120
+ammo_magazine = 30
+damage = 5
+fire_rate = 600.0
+weapon_type = 2
+id = 3
+sound_gunshot_resource = "res://Sounds/SFX/minigun.ogg"
+
+[node name="arms" parent="." instance=ExtResource("2_41dub")]
+
+[node name="muzzle" type="Node3D" parent="."]
+transform = Transform3D(-1, 0, -1.50996e-07, 0, 1, 0, 1.50996e-07, 0, -1, 0.0747447, 0.136051, -0.856745)
+script = ExtResource("3_vk407")
+
+[node name="Flash" type="OmniLight3D" parent="muzzle"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.089873, 4.76837e-07, 3.5999)
+visible = false
+light_color = Color(1, 0.760784, 0.490196, 1)
+light_energy = 15.0
+light_volumetric_fog_energy = 0.0
+omni_range = 50.0
+omni_attenuation = 2.0
+
+[node name="FlashTimer" type="Timer" parent="muzzle"]
+
+[node name="flashlight_mount" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.076166, 0.0533961, -0.751901)
+
+[connection signal="timeout" from="muzzle/FlashTimer" to="muzzle" method="_on_flash_timer_timeout"]

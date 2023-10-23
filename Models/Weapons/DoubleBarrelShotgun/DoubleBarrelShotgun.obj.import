@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://1rqpaxq6t2l"
+path="res://.godot/imported/DoubleBarrelShotgun.obj-d8a5ca0ad7c8cd50a8cccbbb08c2d211.mesh"
+
+[deps]
+
+files=["res://.godot/imported/DoubleBarrelShotgun.obj-d8a5ca0ad7c8cd50a8cccbbb08c2d211.mesh"]
+
+source_file="res://Models/Weapons/DoubleBarrelShotgun/DoubleBarrelShotgun.obj"
+dest_files=["res://.godot/imported/DoubleBarrelShotgun.obj-d8a5ca0ad7c8cd50a8cccbbb08c2d211.mesh", "res://.godot/imported/DoubleBarrelShotgun.obj-d8a5ca0ad7c8cd50a8cccbbb08c2d211.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
