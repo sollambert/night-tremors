@@ -26,7 +26,7 @@ func _ready():
 	ambient_audio_player = get_node("/root/Main/AmbientMusic")
 	subviewport = get_node("/root/Main/ViewContainer/SubViewport")
 	ui_controller = get_node("/root/Main/ViewContainer/UIController")
-	load_level(1)
+	load_level(0)
 	pass # Replace with function body.
 
 func _on_player_dead():
