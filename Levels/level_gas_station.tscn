@@ -7100,7 +7100,7 @@ respawn_time = 20.0
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25.1488, 0.125979, -11.801)
 weapon_id = 3
 value = 60
-model_resource = "res://Weapons/Pistol/pistol_model.tscn"
+model_resource = "res://Weapons/SubmachineGun/submachinegun_model.tscn"
 
 [node name="Pickup3" parent="." instance=ExtResource("58_mcyly")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.62281, 0.12598, -12.024)

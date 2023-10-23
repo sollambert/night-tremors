@@ -43,7 +43,7 @@ func display_popup_text(text: String, duration: float):
 	timer.timeout.connect(_dispose_popup_text)
 	timer.start(duration)
 	popup_text.get_node("Label").text = text
-	display_panel_by_name("Popup_Text")
+	popup_text.visible = true
 	
 func _dispose_popup_text():
 	timer.stop()

@@ -2,17 +2,18 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ckkmmwi36upwb"
-path.s3tc="res://.godot/imported/ak74.png-424ff50c487ea268df1f8b6ca20f3451.s3tc.ctex"
+uid="uid://btps733nukoua"
+path.s3tc="res://.godot/imported/Player_Arms_MachineGun-a137b931d45956f54b26d50fa31829aa_PlayerArms.png-516c7f893de2b0e3d2657f84d58bb951.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
+generator_parameters={}
 
 [deps]
 
-source_file="res://Models/You see Ivan/You see Ivan Pack/textures/ak74.png"
-dest_files=["res://.godot/imported/ak74.png-424ff50c487ea268df1f8b6ca20f3451.s3tc.ctex"]
+source_file="res://Models/Arms/Player_Arms_MachineGun-a137b931d45956f54b26d50fa31829aa_PlayerArms.png"
+dest_files=["res://.godot/imported/Player_Arms_MachineGun-a137b931d45956f54b26d50fa31829aa_PlayerArms.png-516c7f893de2b0e3d2657f84d58bb951.s3tc.ctex"]
 
 [params]
 
