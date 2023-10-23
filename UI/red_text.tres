@@ -1,0 +1,8 @@
+[gd_resource type="LabelSettings" load_steps=2 format=3 uid="uid://cw7seyt5q4wip"]
+
+[ext_resource type="FontFile" uid="uid://vfrbsktdf4eo" path="res://UI/Fonts/ZilapSleepGrunge-zLnX.ttf" id="1_a3nxm"]
+
+[resource]
+font = ExtResource("1_a3nxm")
+font_size = 32
+font_color = Color(0.8, 0, 0, 1)

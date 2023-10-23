@@ -26,13 +26,12 @@ func _ready():
 	ambient_audio_player = get_node("/root/Main/AmbientMusic")
 	subviewport = get_node("/root/Main/ViewContainer/SubViewport")
 	ui_controller = get_node("/root/Main/ViewContainer/UIController")
-	load_level(1)
+	load_level(0)
 	pass # Replace with function body.
 
 func _on_player_dead():
 	player.reset_player()
 	load_level(player.current_level_id)
-	ui_controller.display_scene_by_name("GameOver")
 
 func load_level(level_id: int):
 	if current_level:

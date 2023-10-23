@@ -1,4 +1,4 @@
-[gd_scene load_steps=41 format=3 uid="uid://yq61fvrxcoxf"]
+[gd_scene load_steps=40 format=3 uid="uid://yq61fvrxcoxf"]
 
 [ext_resource type="Shader" path="res://Shaders/psx.gdshader" id="1_cfx2a"]
 [ext_resource type="PackedScene" uid="uid://dm1ecp7mc3ukw" path="res://UI/ui.tscn" id="2_86nqh"]
@@ -9,10 +9,10 @@
 [ext_resource type="Script" path="res://UI/brightness_slider.gd" id="6_iwg1f"]
 [ext_resource type="Script" path="res://UI/volume_slider.gd" id="7_hoeap"]
 [ext_resource type="Script" path="res://Sounds/AmbientMusic.gd" id="23_tp4nq"]
+[ext_resource type="LabelSettings" uid="uid://cw7seyt5q4wip" path="res://UI/red_text.tres" id="26_u8605"]
 [ext_resource type="Script" path="res://VideoSettings.gd" id="27_imun2"]
 [ext_resource type="Script" path="res://UI/Intro_1.gd" id="27_u0emy"]
 [ext_resource type="PackedScene" uid="uid://b1fcihrnlc8m4" path="res://UI/controls.tscn" id="31_yn2yb"]
-[ext_resource type="FontFile" uid="uid://vfrbsktdf4eo" path="res://UI/Fonts/ZilapSleepGrunge-zLnX.ttf" id="32_ncdm0"]
 [ext_resource type="AudioStream" uid="uid://wek4vwhevycw" path="res://Sounds/drones/horror_01_drone_glitch_01.ogg" id="50_fkipy"]
 [ext_resource type="AudioStream" uid="uid://bhd4bn01eek8u" path="res://Sounds/drones/horror_01_drone_glitch_02.ogg" id="51_dmt8s"]
 [ext_resource type="AudioStream" uid="uid://qejrckhodjq" path="res://Sounds/drones/horror_01_drone_glitch_03.ogg" id="52_18d1d"]
@@ -100,11 +100,6 @@ shader_parameter/dithering = true
 shader_parameter/colors = 12
 shader_parameter/dither_size = 2
 
-[sub_resource type="LabelSettings" id="LabelSettings_kws4u"]
-font = ExtResource("32_ncdm0")
-font_size = 32
-font_color = Color(0.8, 0, 0, 1)
-
 [node name="Main" type="Node3D"]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
@@ -144,6 +139,31 @@ visible = false
 
 [node name="ui" parent="ViewContainer/UIController/HUD" instance=ExtResource("2_86nqh")]
 
+[node name="Popup_Text" type="Control" parent="ViewContainer/UIController"]
+visible = false
+layout_mode = 3
+anchor_left = 0.5
+anchor_top = 0.2
+anchor_right = 0.5
+anchor_bottom = 0.2
+offset_left = -640.0
+offset_right = 640.0
+offset_bottom = 100.0
+grow_horizontal = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="ViewContainer/UIController/Popup_Text"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+label_settings = ExtResource("26_u8605")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
 [node name="GameWon" type="ColorRect" parent="ViewContainer/UIController"]
 visible = false
 anchors_preset = -1
@@ -172,6 +192,31 @@ You've escaped for the time being
 
 enjoy it"
 label_settings = ExtResource("5_sa7jt")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="GameOver" type="ColorRect" parent="ViewContainer/UIController"]
+visible = false
+anchors_preset = -1
+anchor_right = 1.002
+anchor_bottom = 1.007
+offset_right = -2.55994
+offset_bottom = -5.03998
+size_flags_horizontal = 3
+size_flags_vertical = 3
+color = Color(0, 0, 0, 1)
+
+[node name="Label" type="Label" parent="ViewContainer/UIController/GameOver"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "you died
+
+click to restart"
+label_settings = ExtResource("26_u8605")
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -439,31 +484,6 @@ offset_top = 185.0
 offset_right = -282.0
 offset_bottom = -185.0
 grow_vertical = 1
-
-[node name="Popup_Text" type="Control" parent="ViewContainer/UIController"]
-visible = false
-layout_mode = 3
-anchor_left = 0.5
-anchor_top = 0.2
-anchor_right = 0.5
-anchor_bottom = 0.2
-offset_left = -640.0
-offset_right = 640.0
-offset_bottom = 100.0
-grow_horizontal = 2
-size_flags_horizontal = 3
-
-[node name="Label" type="Label" parent="ViewContainer/UIController/Popup_Text"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-label_settings = SubResource("LabelSettings_kws4u")
-horizontal_alignment = 1
-vertical_alignment = 1
-autowrap_mode = 3
 
 [node name="SubViewport" type="SubViewport" parent="ViewContainer"]
 handle_input_locally = false

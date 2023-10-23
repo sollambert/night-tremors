@@ -1,7 +1,7 @@
 extends CanvasLayer
 
 enum ControlScheme {
-	FIRST_PERSON, PAUSE_MENU, INVENTORY, UNFOCUSED, INTRO, GAME_WON
+	FIRST_PERSON, PAUSE_MENU, INVENTORY, UNFOCUSED, INTRO, GAME_WON, GAME_OVER
 }
 
 # state
@@ -23,6 +23,7 @@ signal player_weapon_switch(weapon_id: int)
 signal game_focused
 
 var active_scheme
+var player
 
 # Components
 var scene_controller: Node3D
@@ -34,19 +35,25 @@ const BASE_RESOLUTION : Vector2i = Vector2i(1280, 720)
 func _ready():
 	scene_controller = get_node("/root/Main/SceneController")
 	ui_controller = get_node("/root/Main/ViewContainer/UIController")
-	scene_controller.game_won.connect(_on_scene_controller_game_won)
-	scene_controller.set_game_paused(true)
+	player = get_node("/root/Main/ViewContainer/SubViewport/Player")
 	process_mode = Node.PROCESS_MODE_ALWAYS
 	connect_signals()
 	pass # Replace with function body.
 
 func connect_signals():
 	ui_controller.intro_button_pressed.connect(_on_intro_button_pressed)
+	player.player_dead.connect(_on_player_dead)
+	scene_controller.game_won.connect(_on_scene_controller_game_won)
 	get_node("/root/Main/ViewContainer/UIController/Intro_1").opened.connect(_on_intro_opened)
+	get_node("/root/Main/ViewContainer/UIController/Intro_2").opened.connect(_on_intro_opened)
 	get_node("/root/Main/ViewContainer/UIController/VideoSettings").opened.connect(_on_video_settings_opened)
 	
+func _on_player_dead():
+	change_control_scheme(ControlScheme.GAME_OVER)
+
 func _on_video_settings_opened():
 	change_control_scheme(ControlScheme.PAUSE_MENU)
+
 func _on_intro_opened():
 	change_control_scheme(ControlScheme.INTRO)
 
@@ -103,7 +110,15 @@ func _input(event):
 				pass
 			ControlScheme.INVENTORY:
 				pass
+			ControlScheme.GAME_OVER:
+				if Input.is_action_just_pressed("player_shoot"):
+					scene_controller.set_game_paused(false)
+#					scene_controller.load_level(player.current_level_id)
+				pass
 			ControlScheme.UNFOCUSED:
+				if Input.is_action_just_pressed("player_shoot"):
+					scene_controller.set_game_paused(false)
+					change_control_scheme(previous_scheme)
 				pass
 			ControlScheme.GAME_WON:
 				if event.is_action_pressed("player_shoot"):
@@ -132,17 +147,11 @@ func _physics_process(delta):
 		ControlScheme.INVENTORY:
 			pass
 		ControlScheme.UNFOCUSED:
-			if Input.is_action_just_pressed("player_shoot"):
-				if (previous_scheme):
-					change_control_scheme(previous_scheme)
 			pass
 	pass
 
 func _notification(what):
-	if what == MainLoop.NOTIFICATION_APPLICATION_FOCUS_IN:
-		scene_controller.set_game_paused(false)
-		pass
-	elif what == MainLoop.NOTIFICATION_APPLICATION_FOCUS_OUT:
+	if what == MainLoop.NOTIFICATION_APPLICATION_FOCUS_OUT:
 		if active_scheme == ControlScheme.GAME_WON:
 			get_tree().quit()
 		if active_scheme != ControlScheme.UNFOCUSED:

@@ -8,6 +8,7 @@ var scene_controller : Node3D
 var game_complete: ColorRect
 var popup_text: Control
 var timer: Timer
+var player: CharacterBody3D
 
 signal intro_button_pressed
 
@@ -17,6 +18,7 @@ var panels = []
 func _ready():
 	input_controller = get_node("/root/Main/InputController")
 	scene_controller = get_node("/root/Main/SceneController")
+	player = get_node("/root/Main/ViewContainer/SubViewport/Player")
 	scene_controller.game_won.connect(_on_game_won)
 	popup_text = get_node("Popup_Text")
 	for child in get_children():
@@ -29,11 +31,13 @@ func _ready():
 func _on_game_won():
 	display_panel_by_name("GameWon")
 
-#func connect_signals():
-#	get_node("Intro_1/ColorRect/IntroButton").pressed.connect(_on_intro_button_pressed)
+func connect_signals():
+	player.player_dead.connect(_on_player_dead)
+
+func _on_player_dead():
+	display_panel_by_name("GameOver")
 
 func _on_intro_button_pressed():
-	print("intro button pressed")
 	display_panel_by_name("HUD")
 	intro_button_pressed.emit()
 
