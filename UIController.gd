@@ -6,6 +6,8 @@ var hud_overlay : CanvasLayer
 var input_controller : CanvasLayer
 var scene_controller : Node3D
 var game_complete: ColorRect
+var popup_text: Control
+var timer: Timer
 
 signal intro_button_pressed
 
@@ -16,6 +18,7 @@ func _ready():
 	input_controller = get_node("/root/Main/InputController")
 	scene_controller = get_node("/root/Main/SceneController")
 	scene_controller.game_won.connect(_on_game_won)
+	popup_text = get_node("Popup_Text")
 	for child in get_children():
 		child.set_process(false)
 		child.visible = false
@@ -33,6 +36,19 @@ func _on_intro_button_pressed():
 	print("intro button pressed")
 	display_panel_by_name("HUD")
 	intro_button_pressed.emit()
+
+func display_popup_text(text: String, duration: float):
+	timer = Timer.new()
+	get_node("/root/Main").add_child(timer)
+	timer.timeout.connect(_dispose_popup_text)
+	timer.start(duration)
+	popup_text.get_node("Label").text = text
+	display_panel_by_name("Popup_Text")
+	
+func _dispose_popup_text():
+	timer.stop()
+	timer.queue_free()
+	popup_text.visible = false
 
 func display_panel_by_name(name: String):
 	for panel in panels:

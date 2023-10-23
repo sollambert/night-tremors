@@ -28,6 +28,7 @@ func _ready():
 
 func _on_area_3d_body_entered(body):
 	if body.get_name() == "Player" and !pumps_active:
+		ui_controller.display_popup_text("The power is on, better get out of here quick", 8.0)
 		pumps_active = true
 		red_light.visible = false
 		green_light.visible = true

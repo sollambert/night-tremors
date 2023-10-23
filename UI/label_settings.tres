@@ -5,4 +5,4 @@
 [resource]
 font = ExtResource("1_sscix")
 font_size = 24
-font_color = Color(0.0784314, 0.929412, 0, 1)
+font_color = Color(0.176471, 0.890196, 0, 1)
