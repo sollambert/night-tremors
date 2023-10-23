@@ -1,3 +1,5 @@
+<img src="https://raw.githubusercontent.com/sollambert/night-tremors/main/Media/thumbnail.png" alt="Thumbnail for Night Tremors" width=545 height=482/>
+
 7 days and 80 hours of development, Night Tremors is my first excursion into building an experience with Godot and my submission for Scream Jam 2023. Fight your way through, and escape the nightmare you've stumbled into. Be careful though, these beasts you'll find along the way aren't as dead as they seem.
 
 
@@ -5,7 +7,11 @@ The game itself is short and sweet, expect no more than 20 minutes of gameplay, 
 
 Screenshots:
 
-
+<img src="https://raw.githubusercontent.com/sollambert/night-tremors/main/Media/screenshot_1.png" alt="Screenshot for Night Tremors" width=640 height=480/>
+<img src="https://raw.githubusercontent.com/sollambert/night-tremors/main/Media/screenshot_2.png" alt="Screenshot for Night Tremors" width=640 height=480/>
+<img src="https://raw.githubusercontent.com/sollambert/night-tremors/main/Media/screenshot_3.png" alt="Screenshot for Night Tremors" width=640 height=480/>
+<img src="https://raw.githubusercontent.com/sollambert/night-tremors/main/Media/screenshot_4.png" alt="Screenshot for Night Tremors" width=640 height=480/>
+<img src="https://raw.githubusercontent.com/sollambert/night-tremors/main/Media/screenshot_5.png" alt="Screenshot for Night Tremors" width=640 height=480/>
 
 
 Acknowledgements:
