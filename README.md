@@ -9,7 +9,6 @@ The game itself is short and sweet, expect no more than 20 minutes of gameplay, 
 
 Screenshots:
 
-<img src="https://raw.githubusercontent.com/sollambert/night-tremors/main/Media/screenshot_1.png" alt="Screenshot for Night Tremors" width=640 height=480/>
 <img src="https://raw.githubusercontent.com/sollambert/night-tremors/main/Media/screenshot_2.png" alt="Screenshot for Night Tremors" width=640 height=480/>
 <img src="https://raw.githubusercontent.com/sollambert/night-tremors/main/Media/screenshot_3.png" alt="Screenshot for Night Tremors" width=640 height=480/>
 <img src="https://raw.githubusercontent.com/sollambert/night-tremors/main/Media/screenshot_4.png" alt="Screenshot for Night Tremors" width=640 height=480/>
