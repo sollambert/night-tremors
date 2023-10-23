@@ -35,7 +35,6 @@ var scene_controller
 func _ready():
 	scene_controller = get_node("/root/Main/SceneController")
 	player = get_node("/root/Main/ViewContainer/SubViewport/Player")
-	revives = get_parent_node_3d().revives
 	timer = get_node("Timer")
 	stagger_timer = get_node("StaggerTimer")
 	animation_player = get_node("Skeleton3D/AnimationPlayer")
@@ -109,6 +108,7 @@ func die():
 	var skeleton = get_node("Skeleton3D")
 	var zombie_die : Node3D = zombie_die_scene.instantiate()
 	zombie_die.set_revives(revives)
+	zombie_die.set_follow_distance(follow_distance)
 	scene_controller.current_level.add_child(zombie_die)
 	zombie_die.global_position = skeleton.global_position
 	zombie_die.global_rotation = skeleton.global_rotation
@@ -117,6 +117,8 @@ func die():
 func set_revives(amount):
 	revives = amount
 
+func set_follow_distance(distance):
+	follow_distance = distance
 
 func _on_stagger_timer_timeout():
 	move_speed = BASE_MOVE_SPEED

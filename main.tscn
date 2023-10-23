@@ -445,8 +445,7 @@ render_target_update_mode = 4
 
 [node name="Player" parent="ViewContainer/SubViewport" instance=ExtResource("2_kxypn")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 14.0814, 0, 0.204977)
-speed = 10.0
-sprint_speed = 3.5
+speed = 5.0
 
 [node name="SceneController" type="Node3D" parent="."]
 script = ExtResource("2_uktwo")

@@ -5,7 +5,8 @@ var sound_die = preload("res://Sounds/SFX/action-squelch02.wav")
 var audio_player_scene = preload("res://Sounds/audio_player3d.tscn")
 var zombie_scene = load("res://Actors/zombie.tscn")
 var revive_timer : Timer
-var revives = -1
+var revives
+var follow_distance
 var scene_controller
 
 const REVIVE_TIME = 15.0
@@ -31,6 +32,9 @@ func _process(delta):
 
 func set_revives(amount):
 	revives = amount
+
+func set_follow_distance(distance):
+	follow_distance = distance
 
 func undie():
 	var skeleton = get_node("RootNode/Skeleton3D")

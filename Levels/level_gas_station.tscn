@@ -1,4 +1,4 @@
-[gd_scene load_steps=491 format=3 uid="uid://d1bovxxgno4qo"]
+[gd_scene load_steps=495 format=3 uid="uid://d1bovxxgno4qo"]
 
 [ext_resource type="Texture2D" uid="uid://c7cqvo0tqwn5w" path="res://Models/gas_station_props/textures/Sign_baseColor.jpeg" id="1_7nrkq"]
 [ext_resource type="Script" path="res://Levels/level_gas_station.gd" id="1_628o1"]
@@ -1250,8 +1250,8 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_ao1wf")
 
-[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_r81yx"]
-data = PackedVector3Array(-0.3548, -2.1873, -0.745, -0.3548, 2.2275, 0.2713, -0.3548, -2.1873, 0.2713, -0.3548, -2.1873, -0.745, -0.3548, 2.2275, -0.745, -0.3548, 2.2275, 0.2713, 0.3548, 2.2275, -0.745, 0.3548, -2.1873, 0.2713, 0.3548, 2.2275, 0.2713, 0.3548, 2.2275, -0.745, 0.3548, -2.1873, -0.745, 0.3548, -2.1873, 0.2713, -0.3548, -2.1873, 0.2713, 0.3548, -2.1873, 0.3805, 0.3548, -2.1873, 0.2713, -0.3548, -2.1873, 0.2713, -0.3548, -2.1873, 0.3805, 0.3548, -2.1873, 0.3805, 0.3548, -2.1873, 0.3805, 0.4567, -2.1873, 0.2713, 0.3548, -2.1873, 0.2713, 0.3548, -2.1873, 0.3805, 0.4567, -2.1873, 0.3805, 0.4567, -2.1873, 0.2713, -0.3548, -2.1873, 0.2713, -0.4567, -2.1873, 0.3805, -0.3548, -2.1873, 0.3805, -0.3548, -2.1873, 0.2713, -0.4567, -2.1873, 0.2713, -0.4567, -2.1873, 0.3805)
+[sub_resource type="BoxShape3D" id="BoxShape3D_c52do"]
+size = Vector3(1, 4.5, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lky1u"]
 resource_name = "Marble"
@@ -5641,7 +5641,25 @@ uv1_world_triplanar = true
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_4tulk"]
 material = SubResource("StandardMaterial3D_pw1ht")
-size = Vector2(30, 55)
+size = Vector2(30, 60)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_atb23"]
+albedo_color = Color(1, 0.231373, 0.231373, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_ycth7"]
+material = SubResource("StandardMaterial3D_atb23")
+top_radius = 0.05
+bottom_radius = 0.05
+height = 0.02
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_73k3r"]
+albedo_color = Color(0.537255, 1, 0.231373, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_6jkb7"]
+material = SubResource("StandardMaterial3D_73k3r")
+top_radius = 0.05
+bottom_radius = 0.05
+height = 0.02
 
 [node name="level_gas_station" type="Node3D"]
 script = ExtResource("1_628o1")
@@ -5927,7 +5945,8 @@ skeleton = NodePath("")
 [node name="StaticBody3D" type="StaticBody3D" parent="scene/Sketchfab_model/Gas_station_Props_fbx/RootNode/6twelve/Management/Management_Plaster_0"]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="scene/Sketchfab_model/Gas_station_Props_fbx/RootNode/6twelve/Management/Management_Plaster_0/StaticBody3D"]
-shape = SubResource("ConcavePolygonShape3D_r81yx")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.1)
+shape = SubResource("BoxShape3D_c52do")
 
 [node name="Management_Marble_0" type="MeshInstance3D" parent="scene/Sketchfab_model/Gas_station_Props_fbx/RootNode/6twelve/Management"]
 mesh = SubResource("ArrayMesh_w53kh")
@@ -7059,7 +7078,7 @@ transform = Transform3D(-100, 6.27833e-05, -4.72776e-12, 1.22465e-14, 7.54979e-0
 mesh = SubResource("PlaneMesh_qr2me")
 
 [node name="Player_Start" parent="." instance=ExtResource("3_fudpa")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.4339, -1.43051e-06, 6.03918)
+transform = Transform3D(0.950396, 0, 0.311041, 0, 1, 0, -0.311041, 0, 0.950396, -11.2415, -9.53673e-07, 31.8948)
 
 [node name="StaticBody3D" type="StaticBody3D" parent="."]
 
@@ -7091,7 +7110,7 @@ model_resource = "res://Weapons/Pistol/pistol_model.tscn"
 respawn = true
 
 [node name="exit_car" parent="." instance=ExtResource("60_namla")]
-transform = Transform3D(0.711376, 0, 0.702812, 0, 1, 0, -0.702812, 0, 0.711376, -5.08344, 1.90735e-06, 34.1082)
+transform = Transform3D(0.711376, 0, 0.702812, 0, 1, 0, -0.702812, 0, 0.711376, -14.6036, 1.90735e-06, 33.6802)
 
 [node name="Area3D" type="Area3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.9992, 0, -13.0578)
@@ -7101,8 +7120,29 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.133001, 1.28031, -0.133805)
 shape = SubResource("BoxShape3D_kdup2")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.5631, 0.01, 7.58237)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.5631, 0.01, 11.5361)
 mesh = SubResource("PlaneMesh_4tulk")
+
+[node name="red_light" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.85, 2.155, -13.2)
+light_color = Color(1, 0, 0, 1)
+light_energy = 0.25
+omni_range = 1.0
+
+[node name="green_light" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21, 2.155, -13.2)
+visible = false
+light_color = Color(0.0509804, 1, 0, 1)
+light_energy = 0.25
+omni_range = 1.0
+
+[node name="red_light_bulb" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -20.85, 2.155, -13.682)
+mesh = SubResource("CylinderMesh_ycth7")
+
+[node name="green_light_bulb" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -21, 2.155, -13.682)
+mesh = SubResource("CylinderMesh_6jkb7")
 
 [connection signal="entered" from="exit_car" to="." method="_on_exit_car_entered"]
 [connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]

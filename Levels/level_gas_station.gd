@@ -6,6 +6,8 @@ var zombies_scene = preload("res://Levels_Utils/gas_station_zombies.tscn")
 var sound_electricity = preload("res://Sounds/SFX/electricity.ogg")
 var sound_metal_thunk = preload("res://Sounds/SFX/metal_interaction2.wav")
 var lights
+var green_light: OmniLight3D
+var red_light: OmniLight3D
 var zombies
 var audio_player_scene = preload("res://Sounds/audio_player3d.tscn")
 
@@ -15,6 +17,8 @@ var input_controller
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	green_light = get_node("green_light")
+	red_light = get_node("red_light")
 	ui_controller = get_node("/root/Main/ViewContainer/UIController")
 	ui_controller.display_panel_by_name("Intro_2")
 	input_controller = get_node("/root/Main/InputController")
@@ -25,6 +29,8 @@ func _ready():
 func _on_area_3d_body_entered(body):
 	if body.get_name() == "Player" and !pumps_active:
 		pumps_active = true
+		red_light.visible = false
+		green_light.visible = true
 		lights = lights_scene.instantiate()
 		zombies = zombies_scene.instantiate()
 		play_sound(sound_metal_thunk)
