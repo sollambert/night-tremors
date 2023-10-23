@@ -5,6 +5,8 @@
 
 The game itself is short and sweet, expect no more than 20 minutes of gameplay, but it was a great way to build a foundation for a future project and I will be expanding on this in the future in some form or another.
 
+<a href="https://sollambert.itch.io/night-tremors">Itch.io Page</a>
+
 Screenshots:
 
 <img src="https://raw.githubusercontent.com/sollambert/night-tremors/main/Media/screenshot_1.png" alt="Screenshot for Night Tremors" width=640 height=480/>
